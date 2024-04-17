@@ -1,15 +1,15 @@
 import { Close, Send, Upload } from "@mui/icons-material";
 import { useRef, useState } from "react";
 import MarkdownEditor from "@uiw/react-markdown-editor";
-import { useTitle } from "../Hooks/useTitle";
-import { Taglist } from "../components/Page/TagList";
+import { useTitle } from "../../Hooks/useTitle";
+import { Taglist } from "../../components/Page/TagList";
 import { CircularProgress, TextField, Tooltip } from "@mui/material";
-import { useToken } from "../Hooks/useToken";
+import { useToken } from "../../Hooks/useToken";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
-import { newBlog } from "../api/api";
+import { newBlog } from "../../api/api";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { DialogComponent } from "../../components/DialogComponent";
+import { DialogComponent } from "../../components/Page/DialogComponet";
 
 export const Loading = () => {
   return (

@@ -1,5 +1,5 @@
-import { useTitle } from "../Hooks/useTitle";
-import { LoginSignBackground } from "../components/LoginSignBackground";
+import { useTitle } from "../../Hooks/useTitle";
+import { LoginSignBackground } from "../../components/Page/LoginSignBackground";
 import {
   Box,
   TextField,
@@ -13,10 +13,10 @@ import { AccountCircle, VisibilityOff, Visibility } from "@mui/icons-material";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { signup_Schema } from "../Schemas/scheme";
-import { registerUser } from "../api/api";
+import { signup_Schema } from "../../Schemas/scheme";
+import { registerUser } from "../../api/api";
 import { toast } from "react-toastify";
-import { PleaseWait } from "../components/PleaseWait";
+import { PleaseWait } from "../../components/Page/PleaseWait";
 
 export const SignUp = () => {
   useTitle("Sign Up");

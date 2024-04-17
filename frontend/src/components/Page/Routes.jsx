@@ -22,11 +22,12 @@ import {
   SearchTag,
   SearchAuthor,
   BlogTag,
-} from "../../Pages";
+} from "../Pages";
+
 import { SpinPage } from "../../utils/SpinPage";
 import { useSelector } from "react-redux";
 import { RemoveAccess } from "./RemoveAccess";
-import AuthProvider from "../Auth";
+import AuthProvider from "../Page/Autho";
 import { CheckAccess } from "./CheckAccess";
 import ProfileContext from "./ProfileContext";
 

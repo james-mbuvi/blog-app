@@ -1,5 +1,5 @@
-import { useTitle } from "../Hooks/useTitle";
-import { LoginSignBackground } from "../components/LoginSignBackground";
+import { useTitle } from "../../Hooks/useTitle";
+import { LoginSignBackground } from "../../components/Page/LoginSignBackground";
 import {
   Box,
   TextField,
@@ -13,13 +13,13 @@ import { AccountCircle, VisibilityOff, Visibility } from "@mui/icons-material";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { login_Schema } from "../Schemas/scheme";
-import { loginUser } from "../api/api";
+import { login_Schema } from "../../Schemas/scheme";
+import { loginUser } from "../../api/api";
 import { toast } from "react-toastify";
-import { saveToken } from "../utils/storetoken";
+import { saveToken } from "../../utils/storetoken";
 import { useDispatch } from "react-redux";
-import { setLogin } from "../Store/Reducer/LoginSlice";
-import { PleaseWait } from "../components/PleaseWait";
+import { setLogin } from "../../Store/Reducer/LoginSlice";
+import { PleaseWait } from "../../components/Page/PleaseWait";
 
 export const Login = () => {
   const [islogining, setLogining] = useState(false);

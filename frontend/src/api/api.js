@@ -1,4 +1,4 @@
-import apicall from ".";
+import apicall from "../api/index";
 
 /**
  * Test the app or to restart the server.

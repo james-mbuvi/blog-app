@@ -2,13 +2,13 @@ import { Password, Visibility, VisibilityOff } from "@mui/icons-material";
 import { IconButton, InputAdornment, TextField } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useTitle } from "../Hooks/useTitle";
-import { useToken } from "../Hooks/useToken";
+import { useTitle } from "../../Hooks/useTitle";
+import { useToken } from "../../Hooks/useToken";
 import { useFormik } from "formik";
-import { change_Schema } from "../Schemas/scheme";
-import { changePassword } from "../api/api";
+import { change_Schema } from "../../Schemas/scheme";
+import { changePassword } from "../../api/api";
 import { toast } from "react-toastify";
-import { PleaseWait } from "../components/PleaseWait";
+import { PleaseWait } from "../../components/Page/PleaseWait";
 
 export const ChangePassword = () => {
   useTitle("Change Password");

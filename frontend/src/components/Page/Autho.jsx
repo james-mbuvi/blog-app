@@ -6,7 +6,8 @@ import { setLogin, removeLogin } from "../../Store/Reducer/LoginSlice";
 import { removeData } from "../../Store/Reducer/DataSlice";
 import { verifyUser } from "../../api/api";
 import { deleteToken } from "../../utils/storetoken";
-import Spinner from "../Spinner";
+
+import Spinner from "../Page/Spinner";
 
 const AuthProvider = () => {
   const [permission, setPermission] = useState(false);

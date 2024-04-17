@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 import Prop from "prop-types";
 
 export const SearchPage = ({ searchParams }) => {

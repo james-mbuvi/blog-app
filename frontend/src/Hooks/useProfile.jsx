@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProfileData } from "../components/ProfileContext";
+import { ProfileData } from "../components/Page/ProfileContext";
 
 const useProfile = () => {
   const profiledata = useContext(ProfileData);

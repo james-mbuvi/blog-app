@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { FaGreaterThan } from "react-icons/fa";
-import { HeaderData } from "../data";
-import HeaderCard from "../components/HeaderCard";
-import { useTitle } from "../Hooks/useTitle";
+import { HeaderData } from "../../data";
+import HeaderCard from "../../components/Page/HeaderCard";
+import { useTitle } from "../../Hooks/useTitle";
 
 export const Home = () => {
   useTitle("Home");

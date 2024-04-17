@@ -8,13 +8,14 @@ import { useToken } from "../../Hooks/useToken";
 import { useSelector, useDispatch } from "react-redux";
 import { verifyUser } from "../../api/api";
 import { removeLogin, setLogin } from "../../Store/Reducer/LoginSlice";
-// import { Profile } from "../Profile";
-import Profile from "../Profile";
 
+
+import { Profile } from "../Page/Profile";
 
 import { deleteToken } from "../../utils/storetoken";
-import { VerifyHeader } from "../VerifyHeader";
-import { SearchBar } from "../SearchBar";
+
+import { VerifyHeader } from "../Page/VerifyHeader";
+import { SearchBar } from "../Page/SearchBar";
 
 const Header = () => {
   const isAuthentic = useSelector((state) => state.login.isLogin);

@@ -5,7 +5,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom"
 import { MdIncompleteCircle } from "react-icons/md";
 import { Close } from "@mui/icons-material";
-import { DialogComponent } from "./DialogComponent";
+
+import { DialogComponent } from "../Page/DialogComponet";
 
 export const CheckAccess = ({ children }) => {
   const data = useSelector((state) => state.udata.userData);

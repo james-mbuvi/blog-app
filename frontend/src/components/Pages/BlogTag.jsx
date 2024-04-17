@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 import { useCallback, useEffect, useState } from "react";
-import Spinner from "../components/Page/Spinner";
-import { searchByTag } from "../api/api";
-import { BlogCards } from "../../components/BlogCards";
-import LoadMoreButton from "../components/LoadMoreButton";
+
+import Spinner from "../Page/Spinner";
+
+import { searchByTag } from "../../api/api";
+import { BlogCards } from "../Page/BlogCards";
+
+import LoadMoreButton from "../Page/LoadMoreButton";
 
 export const BlogTag = () => {
   const params = useParams()?.tagname;

@@ -5,7 +5,8 @@ import { removeData } from "../../Store/Reducer/DataSlice";
 import { removeLogin } from "../../Store/Reducer/LoginSlice";
 import { deleteToken } from "../../utils/storetoken";
 import { useNavigate } from "react-router-dom";
-import { DialogComponent } from "../DialogComponent";
+
+import { DialogComponent } from "./DialogComponet";
 
 export const LogoutDialog = ({ open, setOpen }) => {
   const handleClose = () => {

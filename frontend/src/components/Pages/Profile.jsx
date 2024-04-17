@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 import userImage from "../../assets/user.png";
 import { Avatar, CircularProgress, TextField, Tooltip } from "@mui/material";
 import { useState } from "react";
@@ -8,14 +8,14 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import dayjs from "dayjs";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { getImageURL } from "../utils/imageurl";
+import { getImageURL } from "../../utils/imageurl";
 import { toast } from "react-toastify";
-import { useToken } from "../Hooks/useToken";
+import { useToken } from "../../Hooks/useToken";
 import { Upload } from "@mui/icons-material";
-import { updateProfile } from "../api/api";
-import { DialogComponent } from "../../components/DialogComponent";
+import { updateProfile } from "../../api/api";
+import { DialogComponent } from "../../components/Page/DialogComponet";
 import { TbEditCircle } from "react-icons/tb";
-import useProfile from "../Hooks/useProfile";
+import useProfile from "../../Hooks/useProfile";
 
 export const Profile = () => {
   const userdata = useSelector((state) => state.udata.userData);

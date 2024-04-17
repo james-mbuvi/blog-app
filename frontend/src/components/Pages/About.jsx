@@ -1,5 +1,5 @@
-import { useTitle } from "../Hooks/useTitle";
-import { AboutData } from "../data";
+import { useTitle } from "../../Hooks/useTitle";
+import { AboutData } from "../../data";
 
 const About = () => {
   useTitle("About");

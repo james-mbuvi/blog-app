@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { GitHub } from "@mui/icons-material";
 import "animate.css";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 
 export const Developers = () => {
   useTitle("Developer");

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 
 export const Error = () => {
   const navi = useNavigate();

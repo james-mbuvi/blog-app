@@ -1,15 +1,15 @@
 import { useDispatch } from "react-redux";
-import { useToken } from "../Hooks/useToken";
+import { useToken } from "../../Hooks/useToken";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { verifyEmail } from "../api/api";
+import { verifyEmail } from "../../api/api";
 import { useEffect } from "react";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 import { GoVerified } from "react-icons/go";
 import { MdDangerous } from "react-icons/md";
-import Spinner from "../components/Page/Spinner";
+import Spinner from "../../components/Page/Spinner";
 import { FaExclamation } from "react-icons/fa";
-import useProfile from "../Hooks/useProfile";
+import useProfile from "../../Hooks/useProfile";
 
 export const Verify = () => {
   useTitle("Email Verification");

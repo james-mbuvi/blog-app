@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from "react";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 import { useNavigate } from "react-router-dom";
-import { useToken } from "../Hooks/useToken";
-import Spinner from "../components/Page/Spinner";
-import { getUserBlogs } from "../api/api";
+import { useToken } from "../../Hooks/useToken";
+import Spinner from "../../components/Page/Spinner";
+import { getUserBlogs } from "../../api/api";
 import { Add } from "@mui/icons-material";
 import { Pagination } from "@mui/material";
-import { BlogCards } from "../../components/BlogCards";
+import { BlogCards } from "../../components/Page/BlogCards";
 import { RxDashboard } from "react-icons/rx";
 
 export const Dashboard = () => {

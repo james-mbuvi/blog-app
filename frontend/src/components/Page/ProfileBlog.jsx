@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Prop from "prop-types";
-import { BlogCards } from "../BlogCards";
-import { SimpleSpinner } from "./SimpleSpinner";
+import { BlogCards } from "../../components/Page/BlogCards";
+import { SimpleSpinner } from "../../components/Page/SimpleSpinner";
 import { Pagination } from "@mui/material";
 
 export const ProfileBlog = ({ blogdata }) => {

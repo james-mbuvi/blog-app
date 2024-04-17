@@ -1,11 +1,13 @@
 import { useCallback, useState } from "react";
-import { LoadingPlaceHolder } from "../../components/LoadingPlaceHolder";
+
+import { LoadingPlaceHolder } from "../Page/LoginPlaceHolder";
 import { useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { searchBlogs } from "../api/api";
-import { BlogCards } from "../../components/BlogCards";
-import LoadMoreButton from "../components/LoadMoreButton";
-import { ServiceError } from "../components/Page/ServiceError";
+import { searchBlogs } from "../../api/api";
+
+import { BlogCards } from "../Page/BlogCards";
+import LoadMoreButton from "../Page/LoadMoreButton";
+import { ServiceError } from "../Page/ServiceError";
 
 export const SearchBlog = () => {
   const [isLoading, setLoading] = useState(false);

@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
-import { viewBlog } from "../api/api";
-import Spinner from "../components/Page/Spinner";
+import { viewBlog } from "../../api/api";
+import Spinner from "../../components/Page/Spinner";
 import { Error } from "./Error";
-import { BlogView } from "../components/Page/BlogView";
+import { BlogView } from "../../components/Page/BlogView";
 
 export const Blog = () => {
   const [blogdata, setBlogdata] = useState({});

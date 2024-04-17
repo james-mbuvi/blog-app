@@ -1,19 +1,23 @@
 import { useState, useEffect } from "react";
-import Spinner from "../components/Page/Spinner";
+
+import Spinner from "../Page/Spinner";
 import { useNavigate, useParams } from "react-router-dom";
 import { Error } from "./Error";
-import { useTitle } from "../Hooks/useTitle";
-import { useToken } from "../Hooks/useToken";
+
+import { useTitle } from "../../Hooks/useTitle";
+import { useToken } from "../../Hooks/useToken";
 import { toast } from "react-toastify";
-import { updateBlog, viewBlog } from "../api/api";
+import { updateBlog, viewBlog } from "../../api/api";
 import { GrUpdate } from "react-icons/gr";
 import { Loading } from "./NewBlog";
 import { Close, Upload } from "@mui/icons-material";
 import { TextField } from "@mui/material";
-import { Taglist } from "../components/Page/TagList";
-import { DialogComponent } from "../../components/DialogComponent";
+
+import { Taglist } from "../Page/TagList";
+import { DialogComponent } from "../../components/Page/DialogComponet";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
-import { getThumbnailURL } from "../utils/imageurl";
+
+import { getThumbnailURL } from "../../utils/imageurl";
 import { TbEditCircle } from "react-icons/tb";
 import { useCallback } from "react";
 import MarkdownEditor from "@uiw/react-markdown-editor";

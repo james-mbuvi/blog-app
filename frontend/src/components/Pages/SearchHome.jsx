@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import { Recents } from "../components/Recents";
-import { addHistory } from "../utils/history";
-import { useTitle } from "../Hooks/useTitle";
-import { SearchPage } from "./SearchPage";
+
+import { Recents } from "../../components/Page/Recents";
+import { addHistory } from "../../utils/history";
+import { useTitle } from "../../Hooks/useTitle";
+import { SearchPage } from "../Pages/SearchPage";
 
 export const SearchHome = () => {
   useTitle("Search");

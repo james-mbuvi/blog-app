@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Spinner from "../components/Page/Spinner";
-import { getAuthorData } from "../api/api";
+
+import Spinner from "../Page/Spinner";
+import { getAuthorData } from "../../api/api";
 import { Error } from "./Error";
-import { useTitle } from "../Hooks/useTitle";
-import { getImageURL } from "../utils/imageurl";
+import { useTitle } from "../../Hooks/useTitle";
+import { getImageURL } from "../../utils/imageurl";
 import { Avatar, Badge } from "@mui/material";
-import isProfileComplete from "../utils/isProfileComplete";
+import isProfileComplete from "../../utils/isProfileComplete";
 import dayjs from "dayjs";
 import { MdPostAdd, MdVerified } from "react-icons/md";
-import { ProfileBlog } from "../components/ProfileBlog";
+import { ProfileBlog } from "../../components/Page/ProfileBlog";
 
 export const PublicProfile = () => {
   const [isLoading, setLoading] = useState(false);

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { LoadingPlaceHolder } from "../../components/LoadingPlaceHolder";
-import { searchAuthors } from "../api/api";
+import { LoadingPlaceHolder } from "../Page/LoadingPlaceHolder";
+
+import { searchAuthors } from "../../api/api";
 import { useSearchParams } from "react-router-dom";
-import { ProfileCards } from "../components/ProfileCards";
+import { ProfileCards } from "../Page/ProfileCards";
 import { useCallback } from "react";
-import LoadMoreButton from "../components/LoadMoreButton";
-import { ServiceError } from "../components/Page/ServiceError";
+import LoadMoreButton from "../Page/LoadMoreButton";
+import { ServiceError } from "../Page/ServiceError";
 
 export const SearchAuthor = () => {
   const [isLoading, setLoading] = useState(false);

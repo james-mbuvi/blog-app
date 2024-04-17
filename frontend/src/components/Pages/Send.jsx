@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import "animate.css";
-import { useToken } from "../Hooks/useToken";
-import { sendEmail } from "../api/api";
+import { useToken } from "../../Hooks/useToken";
+import { sendEmail } from "../../api/api";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { useTitle } from "../Hooks/useTitle";
+import { useTitle } from "../../Hooks/useTitle";
 import { useState } from "react";
 import { LineWave } from "react-loader-spinner";
 

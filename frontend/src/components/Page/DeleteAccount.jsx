@@ -7,7 +7,8 @@ import { deleteToken } from "../../utils/storetoken";
 import { useNavigate } from "react-router-dom";
 import { deleteUserProfile } from "../../api/api";
 import { useToken } from "../../Hooks/useToken";
-import { DialogComponent } from "./DialogComponent";
+
+import { DialogComponent } from "./DialogComponet";
 import { toast } from "react-toastify";
 
 export const DeleteAccount = ({ open, setOpen }) => {

@@ -7,13 +7,13 @@ import {
   TextField,
   Input,
 } from "@mui/material";
-import { useTitle } from "../Hooks/useTitle";
-import { LoginSignBackground } from "../components/LoginSignBackground";
+import { useTitle } from "../../Hooks/useTitle";
+import { LoginSignBackground } from "../../components/Page/LoginSignBackground";
 import { AccountCircle, Visibility, VisibilityOff } from "@mui/icons-material";
 import { useState } from "react";
 import { useFormik } from "formik";
-import { forgot_Schema } from "../Schemas/scheme";
-import { forgotPassword } from "../api/api";
+import { forgot_Schema } from "../../Schemas/scheme";
+import { forgotPassword } from "../../api/api";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
